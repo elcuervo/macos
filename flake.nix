@@ -75,6 +75,6 @@
         };
       };
 
-      corvus = self.darwinConfigurations.osiris.system;
+      corvus = self.darwinConfigurations.corvus.system;
     };
 }
