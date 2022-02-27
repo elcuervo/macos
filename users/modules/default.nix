@@ -3,7 +3,6 @@
 {
   imports = [
     ./settings.nix
-    ./macos.nix
 
     ./alfred.nix
     ./bartender.nix
@@ -24,10 +23,6 @@
 
   my = {
     modules = {
-      macos = {
-        enable = lib.mkDefault true;
-      };
-
       alfred = {
         enable = lib.mkDefault false;
       };
