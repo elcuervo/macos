@@ -21,10 +21,6 @@ in
   config = with lib;
     mkIf cfg.enable {
       homebrew = {
-        brews = [
-          "svn"
-        ];
-
         taps = [
           "homebrew/cask-fonts"
         ];
