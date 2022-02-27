@@ -61,7 +61,7 @@
       overlay = import ./overlays;
 
       darwinConfigurations = {
-        corvus = inputs.darwin.lib.darwinSystem {
+        corax = inputs.darwin.lib.darwinSystem {
           system = "x86_64-darwin";
           inherit inputs;
 
@@ -75,6 +75,6 @@
         };
       };
 
-      corvus = self.darwinConfigurations.corvus.system;
+      corax = self.darwinConfigurations.corax.system;
     };
 }

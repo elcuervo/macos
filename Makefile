@@ -19,7 +19,7 @@ bootstrap:
 	nix \
     --extra-experimental-features "nix-command flakes" \
     build \
-    github:elcuervo/macos\#corvus \
+    github:elcuervo/macos\#corax \
     --no-write-lock-file
 	./result/sw/bin/darwin-rebuild switch \
-		--flake github:elcuervo/macos\#corvus
+		--flake github:elcuervo/macos\#corax
