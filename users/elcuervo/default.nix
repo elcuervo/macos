@@ -19,15 +19,9 @@ in
         enable = true;
 
         entries = [
-          {
-            path = "/System/Applications/Launchpad.app";
-          }
-          {
-            path = "/Applications/iTerm.app";
-          }
-          {
-            path = "/System/Applications/Mail.app";
-          }
+          { path = "/System/Applications/Launchpad.app"; }
+          { path = "/Applications/iTerm.app"; }
+          { path = "/System/Applications/Mail.app"; }
           {
             path = "/Users/${username}/Downloads/";
             section = "others";
@@ -85,6 +79,8 @@ in
     };
 
     programs = {
+      home-manager.enable = true;
+
       alacritty = import ./programs/alacritty.nix { inherit pkgs; };
       direnv = import ./programs/direnv.nix { inherit pkgs; };
       fzf = import ./programs/fzf.nix { inherit pkgs; };
