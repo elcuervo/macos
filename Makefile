@@ -8,6 +8,10 @@ update:
 switch:
 	darwin-rebuild switch --flake .
 
+.PHONY: key
+key:
+	ssh-keygen -o -a 100 -t ed25519 -C "${USER}@${HOST}"
+
 .PHONY: setup
 setup:
 	bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
