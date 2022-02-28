@@ -21,14 +21,6 @@ in
   config = with lib;
     mkIf cfg.enable {
       homebrew = {
-        taps = [
-          "homebrew/cask"
-        ];
-
-        casks = [
-          "swiftdefaultappsprefpane"
-        ];
-
         brews = [
           "mas"
         ];

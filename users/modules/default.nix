@@ -27,7 +27,7 @@
   my = {
     modules = {
       macos = {
-        enable = lib.mkDefault false;
+        enable = lib.mkDefault true;
       };
 
       alfred = {
