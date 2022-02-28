@@ -18,8 +18,8 @@ setup:
 	sh <(curl -L https://nixos.org/nix/install)
 	echo "run\tprivate/var/run" | sudo tee -a /etc/synthetic.conf
 
-.PHONY: bootstrap
-bootstrap:
+.PHONY: corax
+corax:
 	nix \
     --extra-experimental-features "nix-command flakes" \
     build \
@@ -27,3 +27,12 @@ bootstrap:
     --no-write-lock-file
 	./result/sw/bin/darwin-rebuild switch \
 		--flake github:elcuervo/macos\#corax
+
+poe:
+	nix \
+    --extra-experimental-features "nix-command flakes" \
+    build \
+    github:elcuervo/macos\#poe \
+    --no-write-lock-file
+	./result/sw/bin/darwin-rebuild switch \
+		--flake github:elcuervo/macos\#poe
