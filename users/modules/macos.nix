@@ -26,7 +26,9 @@ in
         ];
 
         masApps = {
+          # Name = App Id from the url
           "1Password 7" = 1333542190;
+          "Bitwarden" = 1352778147;
           "Xcode" = 497799835;
           "The Unarchiver" = 425424353;
         };
