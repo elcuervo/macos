@@ -32,10 +32,8 @@ in
             ".hammerspoon/init.lua" = {
               executable = true;
               text = ''
-                hs.hotkey.bind({"cmd", "alt", "ctrl"}, "F", function()
-                  for _, w in pairs(hs.window.allWindows()) do
-                    w:maximize()
-                  end
+                hs.hotkey.bind({"cmd"}, '1', function()
+                  hs.application.launchOrFocus("iTerm")
                 end)
               '';
             };
