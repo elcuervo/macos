@@ -34,6 +34,7 @@ in
           wget
           yq
           coreutils
+          silver-searcher
         ];
       };
     };
