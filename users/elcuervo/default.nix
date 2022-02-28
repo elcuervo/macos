@@ -29,33 +29,6 @@ in
           }
         ];
       };
-
-      finder = {
-        enable = true;
-
-        entries = [
-          {
-            path = "/Users/${username}";
-            alias = "Home";
-          }
-          {
-            path = "/Applications";
-            alias = "Applications";
-          }
-          {
-            path = "/Users/${username}/Desktop";
-            alias = "Desktop";
-          }
-          {
-            path = "/Users/${username}/Downloads";
-            alias = "Downloads";
-          }
-          {
-            path = "/Users/${username}/code";
-            alias = "Code";
-          }
-        ];
-      };
     };
   };
 

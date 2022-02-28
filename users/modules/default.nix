@@ -11,7 +11,6 @@
     ./dock.nix
     ./docker.nix
     ./etcher.nix
-    ./finder.nix
     ./git.nix
     ./gpg.nix
     ./hammerspoon.nix
@@ -51,10 +50,6 @@
 
       etcher = {
         enable = lib.mkDefault true;
-      };
-
-      finder = {
-        enable = lib.mkDefault false;
       };
 
       git = {
