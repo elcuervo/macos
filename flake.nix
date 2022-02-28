@@ -73,8 +73,22 @@
             ./users/elcuervo
           ];
         };
+
+        poe = inputs.darwin.lib.darwinSystem {
+          system = "aarch64-darwin";
+          inherit inputs;
+
+          modules = [
+            inputs.homemanager.darwinModules.home-manager
+            inputs.agenix.nixosModules.age
+            sharedDarwinConfiguration
+            ./machines/poe
+            ./users/elcuervo
+          ];
+        };
       };
 
       corax = self.darwinConfigurations.corax.system;
+      poe = self.darwinConfigurations.poe.system;
     };
 }
