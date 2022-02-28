@@ -78,6 +78,12 @@ in
       ];
     };
 
+    system.defaults = {
+      dock = {
+        autohide = true;
+      };
+    }
+
     programs = {
       home-manager.enable = true;
 
