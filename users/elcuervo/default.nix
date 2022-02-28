@@ -82,7 +82,7 @@ in
       dock = {
         autohide = true;
       };
-    }
+    };
 
     programs = {
       home-manager.enable = true;
