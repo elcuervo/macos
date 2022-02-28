@@ -19,6 +19,7 @@
     ./bitwarden.nix
     ./rectangle.nix
     ./signal.nix
+    ./telegram.nix
     ./slack.nix
   ];
 
@@ -81,6 +82,10 @@
       };
 
       signal = {
+        enable = lib.mkDefault true;
+      };
+
+      telegram = {
         enable = lib.mkDefault true;
       };
 
