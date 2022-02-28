@@ -83,6 +83,14 @@ in
 
       bat.enable = true;
 
+      gh = {
+        enable = true;
+        settings = {
+          editor = "nvim";
+          git_protocol = "ssh";
+        };
+      };
+
       bash = {
          enable = true;
 
