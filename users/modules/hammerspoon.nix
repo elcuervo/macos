@@ -41,6 +41,10 @@ in
                   hs.application.launchOrFocus("iTerm")
                 end)
 
+                hs.hotkey.bind("cmd", '2', function()
+                  hs.application.launchOrFocus("Safari")
+                end)
+
                 hs.hotkey.bind("cmd", '3', function()
                   hs.application.launchOrFocus("Slack")
                 end)
