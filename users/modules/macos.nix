@@ -16,54 +16,6 @@ in
         };
       };
     };
-
-    system.defaults.dock.wvous-tl-corner = mkOption {
-      type = types.nullOr types.int;
-      default = null;
-      description = ''
-        Hot corner action for top left corner
-      '';
-    };
-
-    system.defaults.dock.wvous-bl-corner = mkOption {
-      type = types.nullOr types.int;
-      default = null;
-      description = ''
-        Hot corner action for bottom left corner
-      '';
-    };
-
-    system.defaults.dock.wvous-tr-corner = mkOption {
-      type = types.nullOr types.int;
-      default = null;
-      description = ''
-        Hot corner action for top right corner
-      '';
-    };
-
-    system.defaults.dock.wvous-br-corner = mkOption {
-      type = types.nullOr types.int;
-      default = null;
-      description = ''
-        Hot corner action for bottom right corner
-      '';
-    };
-
-    system.defaults.dock.largesize = mkOption {
-      type = types.nullOr types.int;
-      default = null;
-      description = ''
-        Large size of the icons in the dock.  The default is 64.
-      '';
-    };
-
-    system.defaults.dock.magnification = mkOption {
-      type = types.nullOr types.bool;
-      default = null;
-      description = ''
-        Enable magnification for the icons in the dock.  The default is false.
-      '';
-    };
   };
 
   config = with lib;
@@ -143,8 +95,6 @@ in
             mineffect = "scale";
             show-recents = false;
             tilesize = 32;
-            largesize = 64;
-            magnification = true;
 
             wvous-tl-corner = 2;
             wvous-bl-corner = 3;
