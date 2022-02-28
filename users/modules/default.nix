@@ -21,6 +21,7 @@
     ./signal.nix
     ./telegram.nix
     ./slack.nix
+    ./zoom.nix
   ];
 
   my = {
@@ -90,6 +91,10 @@
       };
 
       slack = {
+        enable = lib.mkDefault true;
+      };
+
+      zoom = {
         enable = lib.mkDefault true;
       };
     };
