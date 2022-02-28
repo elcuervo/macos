@@ -16,7 +16,6 @@
     ./hammerspoon.nix
     ./iterm.nix
     ./ngrok.nix
-    ./bitwarden.nix
     ./rectangle.nix
     ./signal.nix
     ./telegram.nix
@@ -75,10 +74,6 @@
       };
 
       rectangle = {
-        enable = lib.mkDefault true;
-      };
-
-      bitwarden = {
         enable = lib.mkDefault true;
       };
 
