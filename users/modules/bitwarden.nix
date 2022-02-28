@@ -9,7 +9,7 @@ in
   options = with lib; {
     my = {
       modules = {
-        rectangle = {
+        bitwarden = {
           enable = mkEnableOption ''
             Whether to enable bitwarden module
           '';
