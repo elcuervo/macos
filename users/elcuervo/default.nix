@@ -81,6 +81,8 @@ in
     programs = {
       home-manager.enable = true;
 
+      bat.enable = true;
+
       alacritty = import ./programs/alacritty.nix { inherit pkgs; };
       direnv = import ./programs/direnv.nix { inherit pkgs; };
       fzf = import ./programs/fzf.nix { inherit pkgs; };
