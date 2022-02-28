@@ -32,6 +32,11 @@ in
             ".hammerspoon/init.lua" = {
               executable = true;
               text = ''
+                hs.hotkey.bind({"cmd", "shift"}, "R", function()
+                  hs.reload()
+                end)
+                hs.alert.show("Config loaded")
+
                 hs.hotkey.bind("cmd", '1', function()
                   hs.application.launchOrFocus("iTerm")
                 end)
