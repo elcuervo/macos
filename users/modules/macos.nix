@@ -31,6 +31,7 @@ in
           "Bitwarden" = 1352778147;
           "The Unarchiver" = 425424353;
           "Gestimer" = 990588172;
+          "Lightroom" = 1451544217;
         };
       };
 
