@@ -7,6 +7,7 @@
 
     ./alfred.nix
     ./bartender.nix
+    ./spotify.nix
     ./chrome.nix
     ./dock.nix
     ./docker.nix
@@ -35,6 +36,10 @@
       };
 
       bartender = {
+        enable = lib.mkDefault true;
+      };
+
+      spotify = {
         enable = lib.mkDefault true;
       };
 
