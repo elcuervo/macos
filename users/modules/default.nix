@@ -6,6 +6,7 @@
     ./macos.nix
 
     ./bartender.nix
+    ./grandperspective.nix
     ./spotify.nix
     ./chrome.nix
     ./dock.nix
@@ -31,6 +32,10 @@
       };
 
       bartender = {
+        enable = lib.mkDefault true;
+      };
+
+      grandperspective = {
         enable = lib.mkDefault true;
       };
 
