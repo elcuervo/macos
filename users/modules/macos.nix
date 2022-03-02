@@ -89,7 +89,7 @@ in
             autohide-delay = "0.2";
             mineffect = "scale";
             show-recents = false;
-            tilesize = 32;
+            tilesize = 64;
 
             wvous-tl-corner = 2;
             wvous-bl-corner = 3;
