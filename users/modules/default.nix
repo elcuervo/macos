@@ -5,7 +5,6 @@
     ./settings.nix
     ./macos.nix
 
-    ./alfred.nix
     ./bartender.nix
     ./spotify.nix
     ./chrome.nix
@@ -29,10 +28,6 @@
     modules = {
       macos = {
         enable = lib.mkDefault true;
-      };
-
-      alfred = {
-        enable = lib.mkDefault false;
       };
 
       bartender = {
