@@ -7,6 +7,7 @@
 
     ./bartender.nix
     ./grandperspective.nix
+    ./notion.nix
     ./spotify.nix
     ./chrome.nix
     ./dock.nix
@@ -36,6 +37,10 @@
       };
 
       grandperspective = {
+        enable = lib.mkDefault true;
+      };
+
+      notion = {
         enable = lib.mkDefault true;
       };
 
