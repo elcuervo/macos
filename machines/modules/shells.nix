@@ -20,9 +20,8 @@ in
 
   config = with lib;
     mkIf cfg.enable {
-      environment.shells = mkForce [ pkgs.bash ];
-
       programs = {
+        # Had to manually add the shell to /etc/shells
         bash = {
           enable = true;
         };
