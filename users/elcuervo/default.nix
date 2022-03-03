@@ -76,6 +76,7 @@ in
            gs = "${pkgs.git}/bin/git status";
            gp = "${pkgs.git}/bin/git pull --rebase";
 
+           vim = "${pkgs.neovim}/bin/nvim";
            cat = "${pkgs.bat}/bin/bat";
            lg = "${pkgs.lazygit}/bin/lazygit";
 
