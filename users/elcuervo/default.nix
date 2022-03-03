@@ -137,7 +137,7 @@ in
       neovim = import ./programs/neovim.nix { inherit pkgs; };
       readline = import ./programs/readline.nix { inherit pkgs; };
       ssh = import ./programs/ssh.nix { inherit pkgs; };
-      #starship = import ./programs/starship.nix { inherit pkgs; };
+#      starship = import ./programs/starship.nix { inherit pkgs; };
     };
   };
 }

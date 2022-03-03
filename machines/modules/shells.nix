@@ -20,6 +20,8 @@ in
 
   config = with lib;
     mkIf cfg.enable {
+      environment.shells = mkForce [ pkgs.bash ];
+
       programs = {
         bash = {
           enable = true;
