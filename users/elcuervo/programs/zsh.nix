@@ -2,6 +2,15 @@
 
 {
   enable = true;
+	enableCompletion = true;
+	enableAutosuggestions = true;
+	enableSyntaxHighlighting = true;
+
+  history = {
+    size = 10000000;
+    save = 10000000;
+    extended = true;
+  };
 
 	initExtra = ''
 	. $HOME/.tokens
@@ -9,6 +18,10 @@
 
   oh-my-zsh = {
 	  enable = true;
+
+		plugins = [
+		  "tmux"
+		];
   };
 
   shellAliases = {
