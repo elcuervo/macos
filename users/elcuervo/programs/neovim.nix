@@ -42,12 +42,12 @@
     vim-gist
     vim-tmux-navigator
 
-             # Languages
-             vim-endwise
-             vim-ruby
-             vim-rails
-             vim-terraform
+    # Languages
+    vim-endwise
+    vim-ruby
+    vim-rails
+    vim-terraform
 
-             vim-nix
-           ];
-         }
+    vim-nix
+  ];
+}
