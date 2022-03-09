@@ -36,7 +36,7 @@ in
     users = {
       "${username}" = {
         description = "${fullname}";
-        shell = pkgs.bash;
+        shell = pkgs.zsh;
         home = "/Users/${username}";
       };
     };
@@ -62,32 +62,6 @@ in
           editor = "nvim";
           git_protocol = "ssh";
         };
-      };
-
-      bash = {
-         enable = true;
-
-         initExtra = ''
-           . $HOME/.tokens
-         '';
-
-         shellAliases = {
-           g = "${pkgs.git}/bin/git";
-           gs = "${pkgs.git}/bin/git status";
-           gp = "${pkgs.git}/bin/git pull --rebase";
-
-           vim = "${pkgs.neovim}/bin/nvim";
-           cat = "${pkgs.bat}/bin/bat";
-           lg = "${pkgs.lazygit}/bin/lazygit";
-
-           tmn = "${pkgs.tmux}/bin/tmux -S /tmp/pair new-session -s $1";
-           tma = "${pkgs.tmux}/bin/tmux -S /tmp/pair attach-session -t $1";
-           tml = "${pkgs.tmux}/bin/tmux -S /tmp/pair list-sessions";
-
-           md = "mkdir -pv";
-
-           ":q" = "exit";
-         };
       };
 
        tmux = {
@@ -138,7 +112,7 @@ in
       neovim = import ./programs/neovim.nix { inherit pkgs; };
       readline = import ./programs/readline.nix { inherit pkgs; };
       ssh = import ./programs/ssh.nix { inherit pkgs; };
-#      starship = import ./programs/starship.nix { inherit pkgs; };
+      zsh = import ./programs/zsh.nix { inherit pkgs; };
     };
   };
 }
