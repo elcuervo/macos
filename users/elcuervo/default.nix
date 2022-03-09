@@ -56,6 +56,11 @@ in
 
       bat.enable = true;
 
+      exa = {
+        enable = true;
+        enableAliases = true;
+      };
+
       gh = {
         enable = true;
         settings = {
