@@ -28,6 +28,8 @@ in
             userName = "elcuervo";
             userEmail = "elcuervo@elcuervo.net";
 
+            delta.enable = true;
+
             aliases = {
               ci = "commit";
               di = "diff";
