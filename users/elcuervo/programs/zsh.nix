@@ -19,8 +19,10 @@
   oh-my-zsh = {
 	  enable = true;
 
+		theme = "edvardm";
+
 		plugins = [
-		  "tmux"
+		  "git"
 		];
   };
 
