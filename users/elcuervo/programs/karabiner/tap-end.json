@@ -1,5 +1,5 @@
 {
-  "title": "Tap left shift -> home and right to -> end",
+  "title": "Tap left shift for Home and right to End",
   "rules": [
     {
       "description": "Shift_L tap -> Home, Shift_R tap -> End",
@@ -13,8 +13,28 @@
               ]
             }
           },
+          "to": {
+            "key_code": "left_shift"
+          },
           "to_if_alone": [
-            { "key_code": "36" }
+            { "key_code": "home" }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "right_shift",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": {
+            "key_code": "right_shift"
+          },
+          "to_if_alone": [
+            { "key_code": "end" }
           ],
           "type": "basic"
         }
