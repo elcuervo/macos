@@ -24,6 +24,8 @@
     ./slack.nix
     ./zoom.nix
     ./charles.nix
+    ./alfred.nix
+    ./karabiner.nix
   ];
 
   my = {
@@ -105,6 +107,14 @@
       };
 
       charles = {
+        enable = lib.mkDefault true;
+      };
+
+      alfred = {
+        enable = lib.mkDefault true;
+      };
+
+      karabiner = {
         enable = lib.mkDefault true;
       };
     };
