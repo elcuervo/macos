@@ -33,6 +33,7 @@ end
 local servers = {
   "tsserver",
   "gopls",
+  "solargraph",
   "rnix",
   "rust_analyzer",
 }

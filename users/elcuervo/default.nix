@@ -49,6 +49,25 @@ in
       sessionPath = [
         "$HOME/.local/bin"
       ];
+
+      packages = with pkgs; [
+        # QoL
+
+        nixpkgs-fmt
+
+        tree-sitter
+        nodejs # github copilot
+
+        # extra language servers
+        solargraph
+        rnix-lsp
+        terraform-lsp
+        nodePackages.typescript nodePackages.typescript-language-server
+        gopls
+
+        # debugging
+        delve # golang
+      ];
     };
 
     programs = {
