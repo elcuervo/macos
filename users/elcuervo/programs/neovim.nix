@@ -20,8 +20,10 @@
     sensible
     gruvbox
 
+    # UI
     lightline-vim
     lightline-gruvbox-vim
+    nvim-web-devicons
 
     vim-fugitive
     webapi-vim
@@ -32,6 +34,7 @@
     nvim-lspconfig
     nvim-cmp
     cmp-nvim-lsp
+    cmp-vsnip
 
     # Languages
     vim-endwise
