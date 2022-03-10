@@ -1,6 +1,10 @@
 set number
 set ruler
+
+set expandtab
+set shiftwidth=2
 set tabstop=2
+
 set textwidth=100
 set colorcolumn=100
 set noswapfile

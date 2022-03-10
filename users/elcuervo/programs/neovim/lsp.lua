@@ -34,8 +34,9 @@ local servers = {
   "tsserver",
   "gopls",
   "solargraph",
-  "rnix",
-  "rust_analyzer",
+	"rnix",
+	"rust_analyzer",
+  "terraform-lsp"
 }
 
 local caps = vim.lsp.protocol.make_client_capabilities()

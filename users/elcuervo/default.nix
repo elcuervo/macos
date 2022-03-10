@@ -52,7 +52,6 @@ in
 
       packages = with pkgs; [
         # QoL
-
         nixpkgs-fmt
 
         tree-sitter
