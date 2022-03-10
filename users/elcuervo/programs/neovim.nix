@@ -5,29 +5,19 @@
   vimAlias = true;
   vimdiffAlias = true;
 
-  extraConfig = ''
-             set number
-             set ruler
-             set tabstop=2
-             set textwidth=100
-             set colorcolumn=100
-             set noswapfile
-             set mouse=nvirh
-             inoremap jk <ESC>
-             nnoremap <Leader><space> :noh<cr>
-             colorscheme gruvbox
-             let g:gist_clip_command = 'xclip -selection clipboard'
-             let g:gist_post_private = 1
-             let g:lightline = {
-             \ 'colorscheme': 'gruvbox',
-             \ 'component_function': {
-             \   'filename': 'LightlineFilename',
-             \ },
-             \ 'active': {
-             \   'right': []
-             \ }
-             \ }
-  '';
+  extraConfig = builtins.concatStringsSep "\n" [
+    (lib.strings.fileContents ./config.vim)
+  ];
+
+  extraPackages = with pkgs; [
+      # used to compile tree-sitter grammar
+      tree-sitter
+
+      # https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md
+      nodePackages.typescript nodePackages.typescript-language-server
+      gopls
+      rust-analyzer
+    ];
 
   plugins = with pkgs.vimPlugins; [
     supertab
@@ -41,6 +31,9 @@
     webapi-vim
     vim-gist
     vim-tmux-navigator
+
+    # LSP
+    nvim-lspconfig
 
     # Languages
     vim-endwise
