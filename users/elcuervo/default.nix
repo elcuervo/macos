@@ -72,7 +72,7 @@ in
       alacritty = import ./programs/alacritty.nix { inherit pkgs; };
       direnv = import ./programs/direnv.nix { inherit pkgs; };
       fzf = import ./programs/fzf.nix { inherit pkgs; };
-      neovim = import ./programs/neovim.nix { inherit pkgs; };
+      neovim = import ./programs/neovim.nix { inherit pkgs lib; };
       readline = import ./programs/readline.nix { inherit pkgs; };
       ssh = import ./programs/ssh.nix { inherit pkgs; };
       zsh = import ./programs/zsh.nix { inherit pkgs; };
