@@ -62,7 +62,8 @@ in
         solargraph
         rnix-lsp
         terraform-lsp
-        nodePackages.typescript nodePackages.typescript-language-server
+        nodePackages.typescript
+        nodePackages.typescript-language-server
         gopls
 
         # debugging

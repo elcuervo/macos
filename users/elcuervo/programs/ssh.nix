@@ -3,6 +3,5 @@
 {
   enable = true;
 
-  matchBlocks = {
-  };
+  matchBlocks = { };
 }

@@ -2,9 +2,9 @@
 
 {
   enable = true;
-	enableCompletion = true;
-	enableAutosuggestions = true;
-	enableSyntaxHighlighting = true;
+  enableCompletion = true;
+  enableAutosuggestions = true;
+  enableSyntaxHighlighting = true;
 
   history = {
     size = 10000000;
@@ -12,18 +12,18 @@
     extended = true;
   };
 
-	initExtra = ''
-	. $HOME/.tokens
-	'';
+  initExtra = ''
+    . $HOME/.tokens
+  '';
 
   oh-my-zsh = {
-	  enable = true;
+    enable = true;
 
-		theme = "edvardm";
+    theme = "edvardm";
 
-		plugins = [
-		  "git"
-		];
+    plugins = [
+      "git"
+    ];
   };
 
   shellAliases = {
