@@ -11,6 +11,7 @@
     ''
       lua << EOF
       ${lib.strings.fileContents ./neovim/lsp.lua}
+      ${lib.strings.fileContents ./neovim/config.lua}
       EOF
     ''
   ];
@@ -35,6 +36,10 @@
     nvim-cmp
     cmp-nvim-lsp
     cmp-vsnip
+    vim-vsnip
+
+    # Highlight
+    nvim-treesitter
 
     # Languages
     vim-endwise
