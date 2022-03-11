@@ -61,6 +61,7 @@ in
         solargraph
         rnix-lsp
         terraform-lsp
+        terraform-ls
         nodePackages.typescript
         nodePackages.typescript-language-server
         gopls
