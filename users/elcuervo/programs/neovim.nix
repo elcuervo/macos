@@ -7,6 +7,7 @@
 
   extraConfig = builtins.concatStringsSep "\n" [
     (lib.strings.fileContents ./neovim/config.vim)
+    (lib.strings.fileContents ./neovim/plugins.vim)
 
     ''
       lua << EOF
@@ -35,8 +36,6 @@
     nvim-lspconfig
     nvim-cmp
     cmp-nvim-lsp
-    cmp-vsnip
-    vim-vsnip
 
     # Highlight
     nvim-treesitter
