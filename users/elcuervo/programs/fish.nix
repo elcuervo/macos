@@ -13,6 +13,16 @@
         sha256 = "0c5i7sdrsp0q3vbziqzdyqn4fmp235ax4mn4zslrswvn8g3fvdyh";
       };
     }
+
+    {
+      name = "tide";
+      src = fetchFromGitHub {
+        owner = "IlanCosman";
+        repo = "tide";
+        rev = "3787c725f7f6a0253f59a2c0e9fde03202689c6c";
+        sha256 = "sha256-kqbdI69zVjNTi5vbz3sMcGDPXi6ueyqd628FgcOK+gM=";
+      };
+    }
   ];
 
   shellInit = lib.strings.fileContents ./fish/init.fish;
