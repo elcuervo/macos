@@ -9,10 +9,13 @@
     (lib.strings.fileContents ./neovim/config.vim)
     (lib.strings.fileContents ./neovim/plugins.vim)
 
+    (lib.strings.fileContents ./neovim/plugins/lspsaga.vim)
+
     ''
       lua << EOF
-      ${lib.strings.fileContents ./neovim/lsp.lua}
       ${lib.strings.fileContents ./neovim/config.lua}
+
+      ${lib.strings.fileContents ./neovim/plugins/lspconfig.lua}
       EOF
     ''
   ];
