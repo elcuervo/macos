@@ -39,6 +39,7 @@
     nvim-lspconfig
     nvim-cmp
     cmp-nvim-lsp
+    lspsaga-nvim
 
     # Highlight
     nvim-treesitter
