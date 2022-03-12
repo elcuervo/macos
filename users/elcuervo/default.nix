@@ -36,7 +36,7 @@ in
     users = {
       "${username}" = {
         description = "${fullname}";
-        shell = pkgs.zsh;
+        shell = pkgs.fish;
         home = "/Users/${username}";
       };
     };
@@ -95,7 +95,8 @@ in
       neovim = import ./programs/neovim.nix { inherit pkgs lib; };
       readline = import ./programs/readline.nix { inherit pkgs; };
       ssh = import ./programs/ssh.nix { inherit pkgs; };
-      zsh = import ./programs/zsh.nix { inherit pkgs; };
+      #zsh = import ./programs/zsh.nix { inherit pkgs; };
+      fish = import ./programs/fish.nix { inherit pkgs; };
       tmux = import ./programs/tmux.nix { inherit pkgs; };
     };
   };
