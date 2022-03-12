@@ -3,16 +3,6 @@
 {
   enable = true;
 
-  history = {
-    size = 10000000;
-    save = 10000000;
-    extended = true;
-  };
-
-  initExtra = ''
-    . $HOME/.tokens
-  '';
-
   shellAliases = {
     g = "${pkgs.git}/bin/git";
     gs = "${pkgs.git}/bin/git status";
