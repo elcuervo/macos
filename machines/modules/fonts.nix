@@ -34,6 +34,7 @@ in
           "font-fira-code"
           "font-fontawesome"
           "font-fira-code-nerd-font"
+          "font-hack-nerd-font"
         ];
       };
     };
