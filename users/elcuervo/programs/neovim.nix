@@ -16,6 +16,7 @@
       ${lib.strings.fileContents ./neovim/config.lua}
 
       ${lib.strings.fileContents ./neovim/plugins/lspconfig.lua}
+      ${lib.strings.fileContents ./neovim/plugins/treesitter.lua}
       EOF
     ''
   ];
