@@ -22,6 +22,7 @@ in
     mkIf cfg.enable {
       homebrew = {
         brews = [
+          "gcc"
           "mas"
         ];
 
@@ -48,16 +49,12 @@ in
           };
 
           NSGlobalDomain = {
-            # AppleFontSmoothing = 2;
-            # AppleKeyboardUIMode = 3;
             AppleMeasurementUnits = "Centimeters";
             AppleMetricUnits = 1;
             ApplePressAndHoldEnabled = true;
             AppleShowAllExtensions = false;
             AppleShowScrollBars = "Always";
             AppleTemperatureUnit = "Celsius";
-            # InitialKeyRepeat = 1;
-            # KeyRepeat = 1;
             NSAutomaticCapitalizationEnabled = false;
             NSAutomaticDashSubstitutionEnabled = false;
             NSAutomaticPeriodSubstitutionEnabled = false;
@@ -71,7 +68,6 @@ in
             NSTableViewDefaultSizeMode = 2;
             NSTextShowsControlCharacters = true;
             NSUseAnimatedFocusRing = false;
-            # NSWindowResizeTime = 0.20;
             PMPrintingExpandedStateForPrint = true;
             PMPrintingExpandedStateForPrint2 = true;
             "com.apple.mouse.tapBehavior" = 1;
@@ -107,7 +103,6 @@ in
           loginwindow = {
             DisableConsoleAccess = true;
             GuestEnabled = false;
-            # LoginwindowText = "";
             PowerOffDisabledWhileLoggedIn = true;
             RestartDisabledWhileLoggedIn = true;
             ShutDownDisabledWhileLoggedIn = true;
