@@ -46,7 +46,7 @@ in
                 end)
 
                 hs.hotkey.bind("cmd", '2', function()
-                  hs.application.launchOrFocus("Safari")
+                  hs.application.launchOrFocus("Google Chrome")
                 end)
 
                 hs.hotkey.bind("cmd", '3', function()
