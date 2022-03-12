@@ -78,7 +78,6 @@ in
 
       exa = {
         enable = true;
-        enableAliases = true;
       };
 
       gh = {

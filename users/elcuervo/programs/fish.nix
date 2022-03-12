@@ -32,6 +32,9 @@
     gs = "${pkgs.git}/bin/git status";
     gp = "${pkgs.git}/bin/git pull --rebase";
 
+    ls = "exa --icons";
+    ll = "exa -l -a --icons";
+
     vim = "${pkgs.neovim}/bin/nvim";
     cat = "${pkgs.bat}/bin/bat";
     lg = "${pkgs.lazygit}/bin/lazygit";
