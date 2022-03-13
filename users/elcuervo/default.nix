@@ -53,6 +53,7 @@ in
       packages = with pkgs; [
         # QoL
         nixpkgs-fmt
+        hyperfine
 
         tree-sitter
         nodejs # github copilot
