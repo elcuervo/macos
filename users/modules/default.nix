@@ -26,6 +26,7 @@
     ./charles.nix
     ./alfred.nix
     ./karabiner.nix
+    ./screensaver.nix
   ];
 
   my = {
@@ -115,6 +116,10 @@
       };
 
       karabiner = {
+        enable = lib.mkDefault true;
+      };
+
+      screensaver = {
         enable = lib.mkDefault true;
       };
     };
