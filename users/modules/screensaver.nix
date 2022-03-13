@@ -1,7 +1,7 @@
 { pkgs, lib, config, options, ... }:
 
 let
-  cfg = config.my.modules.fliqlo;
+  cfg = config.my.modules.screensaver;
 
 in
 
@@ -9,7 +9,7 @@ in
   options = with lib; {
     my = {
       modules = {
-        fliqlo = {
+        screensaver = {
           enable = mkEnableOption ''
             Whether to enable fliqlo module
           '';
