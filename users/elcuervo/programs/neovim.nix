@@ -19,6 +19,7 @@
 
       ${lib.strings.fileContents ./neovim/plugins/lspconfig.lua}
       ${lib.strings.fileContents ./neovim/plugins/treesitter.lua}
+      ${lib.strings.fileContents ./neovim/plugins/lualine.lua}
       EOF
     ''
   ];
@@ -49,6 +50,7 @@
     # Navigation
     plenary-nvim
     telescope-nvim
+    lualine-nvim
 
     # Highlight
     nvim-treesitter
