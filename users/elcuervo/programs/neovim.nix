@@ -11,6 +11,7 @@
 
     (lib.strings.fileContents ./neovim/plugins/lspsaga.vim)
     (lib.strings.fileContents ./neovim/plugins/cmp.vim)
+    (lib.strings.fileContents ./neovim/plugins/telescope.vim)
 
     ''
       lua << EOF
@@ -42,6 +43,12 @@
     nvim-cmp
     cmp-nvim-lsp
     lspsaga-nvim
+    luasnip
+    lspkind-nvim
+
+    # Navigation
+    plenary-nvim
+    telescope-nvim
 
     # Highlight
     nvim-treesitter
