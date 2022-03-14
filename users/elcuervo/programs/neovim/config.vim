@@ -18,12 +18,3 @@ colorscheme gruvbox
 
 let g:gist_clip_command = 'xclip -selection clipboard'
 let g:gist_post_private = 1
-let g:lightline = {
-\ 'colorscheme': 'gruvbox',
-\ 'component_function': {
-\   'filename': 'LightlineFilename',
-\ },
-\ 'active': {
-\   'right': []
-\ }
-\ }

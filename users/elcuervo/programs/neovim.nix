@@ -30,8 +30,7 @@
     gruvbox
 
     # UI
-    lightline-vim
-    lightline-gruvbox-vim
+    lualine-nvim
     nvim-web-devicons
 
     vim-fugitive
@@ -50,7 +49,6 @@
     # Navigation
     plenary-nvim
     telescope-nvim
-    lualine-nvim
 
     # Highlight
     nvim-treesitter
