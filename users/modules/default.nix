@@ -27,7 +27,6 @@
     ./alfred.nix
     ./karabiner.nix
     ./screensaver.nix
-    ./twitter.nix
   ];
 
   my = {
@@ -121,10 +120,6 @@
       };
 
       screensaver = {
-        enable = lib.mkDefault true;
-      };
-
-      twitter = {
         enable = lib.mkDefault true;
       };
     };

@@ -33,6 +33,7 @@ in
           "The Unarchiver" = 425424353;
           "Gestimer" = 990588172;
           "Lightroom" = 1451544217;
+          "Twitter" = 1482454543;
         };
       };
 
