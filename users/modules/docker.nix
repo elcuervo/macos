@@ -22,7 +22,9 @@ in
     mkIf cfg.enable {
       environment = {
         systemPackages = with pkgs; [
-          lima
+          colima
+          docker
+          docker-compose
         ];
       };
     };
