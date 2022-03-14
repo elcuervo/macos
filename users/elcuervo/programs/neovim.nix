@@ -10,6 +10,7 @@
     (lib.strings.fileContents ./neovim/plugins.vim)
 
     (lib.strings.fileContents ./neovim/plugins/lspsaga.vim)
+    (lib.strings.fileContents ./neovim/plugins/cmp.vim)
 
     ''
       lua << EOF
