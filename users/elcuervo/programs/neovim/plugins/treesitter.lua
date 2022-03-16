@@ -6,10 +6,16 @@ require'nvim-treesitter.configs'.setup {
     enable = true,
     disable = {},
   },
+
   indent = {
     enable = true,
     disable = {},
   },
+
+  endwise = {
+    enable = true,
+  },
+
   ensure_installed = {
     "ruby",
     "go",
@@ -19,6 +25,7 @@ require'nvim-treesitter.configs'.setup {
     "html",
     "yaml"
   },
+
   autotag = {
     enable = true,
   }
