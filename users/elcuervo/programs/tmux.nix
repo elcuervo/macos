@@ -18,6 +18,7 @@ in
   keyMode = "vi";
   historyLimit = 100000;
   terminal = "screen-256color";
+  clock24 = true;
 
   sensibleOnTop = true;
 
