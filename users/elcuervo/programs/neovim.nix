@@ -11,12 +11,12 @@ let
     };
   };
 
-  catppuccin = pkgs.vimUtils.buildVimPlugin {
-    name = "catppuccin-nvim";
+  github-nvim-theme = pkgs.vimUtils.buildVimPlugin {
+    name = "github-nvim-theme";
     src = pkgs.fetchFromGitHub {
-      owner = "catppuccin";
-      repo = "nvim";
-      rev = "f079dda3dc23450d69b4bad11bfbd9af2c77f6f3";
+      owner = "projekt0n";
+      repo = "github-nvim-theme";
+      rev = "61b7bb601554ed45a0ce0be8c909373c837b042e";
       sha256 = "sha256-8N7y2Swhgy1N9nVmuh3KJq0666zUEt5TIeU4SmYYn50=";
     };
   };
@@ -52,7 +52,7 @@ in
 
     # UI
     gruvbox
-    catppuccin
+    github-nvim-theme
     lualine-nvim
     nvim-web-devicons
 

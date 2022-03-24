@@ -56,6 +56,7 @@ in
         hyperfine
 
         tree-sitter
+        lua53Packages.luacheck
         nodejs # github copilot
 
         # extra language servers
