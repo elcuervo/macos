@@ -27,6 +27,8 @@
     ./alfred.nix
     ./karabiner.nix
     ./screensaver.nix
+
+    ./apps.nix
   ];
 
   my = {
