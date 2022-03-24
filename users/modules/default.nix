@@ -5,30 +5,13 @@
     ./settings.nix
     ./macos.nix
 
-    ./bartender.nix
-    ./grandperspective.nix
-    ./notion.nix
-    ./spotify.nix
-    ./chrome.nix
+    ./apps.nix
+
     ./dock.nix
     ./docker.nix
-    ./etcher.nix
     ./git.nix
     ./gpg.nix
     ./hammerspoon.nix
-    ./iterm.nix
-    ./ngrok.nix
-    ./rectangle.nix
-    ./signal.nix
-    ./telegram.nix
-    ./slack.nix
-    ./zoom.nix
-    ./charles.nix
-    ./alfred.nix
-    ./karabiner.nix
-    ./screensaver.nix
-
-    ./apps.nix
   ];
 
   my = {
@@ -37,23 +20,7 @@
         enable = lib.mkDefault true;
       };
 
-      bartender = {
-        enable = lib.mkDefault true;
-      };
-
-      grandperspective = {
-        enable = lib.mkDefault true;
-      };
-
-      notion = {
-        enable = lib.mkDefault true;
-      };
-
-      spotify = {
-        enable = lib.mkDefault true;
-      };
-
-      chrome = {
+      apps = {
         enable = lib.mkDefault true;
       };
 
@@ -62,10 +29,6 @@
       };
 
       docker = {
-        enable = lib.mkDefault true;
-      };
-
-      etcher = {
         enable = lib.mkDefault true;
       };
 
@@ -78,50 +41,6 @@
       };
 
       hammerspoon = {
-        enable = lib.mkDefault true;
-      };
-
-      iterm = {
-        enable = lib.mkDefault true;
-      };
-
-      ngrok = {
-        enable = lib.mkDefault true;
-      };
-
-      rectangle = {
-        enable = lib.mkDefault true;
-      };
-
-      signal = {
-        enable = lib.mkDefault true;
-      };
-
-      telegram = {
-        enable = lib.mkDefault true;
-      };
-
-      slack = {
-        enable = lib.mkDefault true;
-      };
-
-      zoom = {
-        enable = lib.mkDefault true;
-      };
-
-      charles = {
-        enable = lib.mkDefault true;
-      };
-
-      alfred = {
-        enable = lib.mkDefault true;
-      };
-
-      karabiner = {
-        enable = lib.mkDefault true;
-      };
-
-      screensaver = {
         enable = lib.mkDefault true;
       };
     };
