@@ -10,16 +10,6 @@ let
       sha256 = "sha256-J1cKq/Ctw8Vj7RL3D9AnSezS+8Ugm+nfgXz7KjfKtVo=";
     };
   };
-
-  github-nvim-theme = pkgs.vimUtils.buildVimPlugin {
-    name = "github-nvim-theme";
-    src = pkgs.fetchFromGitHub {
-      owner = "elcuervo";
-      repo = "github-nvim-theme";
-      rev = "95ffa4c024f73c8d61eabecdd59202df389f34a0";
-      sha256 = "sha256-ZQuE1J0xAmtZ4Eav5zQbP+13lZqX6/T6gm+vXW6EhLE=";
-    };
-  };
 in
 
 {
@@ -51,8 +41,7 @@ in
     sensible
 
     # UI
-    gruvbox
-    github-nvim-theme
+    onedark-nvim
     lualine-nvim
     nvim-web-devicons
 
