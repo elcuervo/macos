@@ -14,10 +14,10 @@ let
   github-nvim-theme = pkgs.vimUtils.buildVimPlugin {
     name = "github-nvim-theme";
     src = pkgs.fetchFromGitHub {
-      owner = "projekt0n";
+      owner = "elcuervo";
       repo = "github-nvim-theme";
-      rev = "61b7bb601554ed45a0ce0be8c909373c837b042e";
-      sha256 = "sha256-8N7y2Swhgy1N9nVmuh3KJq0666zUEt5TIeU4SmYYn50=";
+      rev = "95ffa4c024f73c8d61eabecdd59202df389f34a0";
+      sha256 = "sha256-ZQuE1J0xAmtZ4Eav5zQbP+13lZqX6/T6gm+vXW6EhLE=";
     };
   };
 in
