@@ -14,7 +14,7 @@ set clipboard+=unnamedplus
 inoremap jk <ESC>
 nnoremap <Leader><space> :noh<cr>
 
-colorscheme gruvbox
+colorscheme catppuccin
 
 let g:gist_clip_command = 'xclip -selection clipboard'
 let g:gist_post_private = 1

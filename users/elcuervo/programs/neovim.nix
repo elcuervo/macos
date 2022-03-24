@@ -10,6 +10,16 @@ let
       sha256 = "sha256-J1cKq/Ctw8Vj7RL3D9AnSezS+8Ugm+nfgXz7KjfKtVo=";
     };
   };
+
+  catppuccin = pkgs.vimUtils.buildVimPlugin {
+    name = "catppuccin-nvim";
+    src = pkgs.fetchFromGitHub {
+      owner = "catppuccin";
+      repo = "nvim";
+      rev = "f079dda3dc23450d69b4bad11bfbd9af2c77f6f3";
+      sha256 = "sha256-8N7y2Swhgy1N9nVmuh3KJq0666zUEt5TIeU4SmYYn50=";
+    };
+  };
 in
 
 {
@@ -39,9 +49,10 @@ in
   plugins = with pkgs.vimPlugins; [
     supertab
     sensible
-    gruvbox
 
     # UI
+    gruvbox
+    catppuccin
     lualine-nvim
     nvim-web-devicons
 
