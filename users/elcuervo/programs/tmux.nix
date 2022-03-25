@@ -38,29 +38,33 @@ in
     set -g set-clipboard on
     set -g mouse on
 
-    set -g @plugin 'o0th/tmux-nova'
-
-    set -g @nova-nerdfonts false
-    set -g @nova-nerdfonts-left ""
-    set -g @nova-nerdfonts-right ""
-
-    set -g @nova-segment-mode "#S"
-    set -g @nova-segment-mode-colors "#50fa7b #282a36"
-
-    set -g @nova-segment-whoami "#h"
-    set -g @nova-segment-whoami-colors "#50fa7b #282a36"
-
-    set -g @nova-pane "#I#{?pane_in_mode,  #{pane_mode},}"
-
-    set -g @nova-rows 0
-    set -g @nova-segments-0-left "mode"
-    set -g @nova-segments-0-right "whoami "
   '';
 
   plugins = with pkgs.tmuxPlugins; [
     yank
     vim-tmux-navigator
 
-    tmux-nova
+    {
+      plugin = tmux-nova;
+      extraConfig = ''
+        set -g @plugin 'o0th/tmux-nova'
+
+        set -g @nova-nerdfonts false
+        set -g @nova-nerdfonts-left ""
+        set -g @nova-nerdfonts-right ""
+
+        set -g @nova-segment-mode "#S"
+        set -g @nova-segment-mode-colors "#50fa7b #282a36"
+
+        set -g @nova-segment-whoami "#h"
+        set -g @nova-segment-whoami-colors "#50fa7b #282a36"
+
+        set -g @nova-pane "#I#{?pane_in_mode,  #{pane_mode},}"
+
+        set -g @nova-rows 0
+        set -g @nova-segments-0-left "mode"
+        set -g @nova-segments-0-right "whoami "
+      '';
+    }
   ];
 }
