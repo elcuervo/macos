@@ -33,6 +33,7 @@ in
           "karabiner-elements"
           "rectangle"
           "alfred"
+          "dropshare"
 
           "grandperspective"
           "notion"
