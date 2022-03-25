@@ -40,7 +40,9 @@ in
           "google-chrome"
           "balenaetcher"
           "iterm2"
+
           "charles"
+          "gqrx"
 
           "fliqlo"
 
