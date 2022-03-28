@@ -37,10 +37,6 @@ in
                 end)
                 hs.alert.show("Config loaded")
 
-                hs.hotkey.bind("cmd", 'return', function()
-                  hs.application.launchOrFocus("iTerm")
-                end)
-
                 hs.hotkey.bind("cmd", '1', function()
                   hs.application.launchOrFocus("iTerm")
                 end)
