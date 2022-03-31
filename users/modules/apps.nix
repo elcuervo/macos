@@ -41,6 +41,7 @@ in
           "google-chrome"
           "balenaetcher"
           "iterm2"
+          "vlc"
 
           "charles"
           "gqrx"
