@@ -57,6 +57,7 @@ in
     lspsaga-nvim
     luasnip
     lspkind-nvim
+    haskell-language-server
 
     # Navigation
     plenary-nvim
