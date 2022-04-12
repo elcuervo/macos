@@ -70,6 +70,9 @@ in
 
         # debugging
         delve # golang
+
+        # tools
+        exercism
       ];
     };
 
