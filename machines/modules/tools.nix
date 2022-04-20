@@ -33,6 +33,7 @@ in
           neovim
           wget
           yq
+          fx
           coreutils
           silver-searcher
         ];
