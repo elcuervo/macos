@@ -34,6 +34,7 @@ in
           "rectangle"
           "alfred"
           "dropshare"
+          "loom"
 
           "grandperspective"
           "notion"
