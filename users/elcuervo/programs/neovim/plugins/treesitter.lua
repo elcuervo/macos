@@ -24,7 +24,9 @@ require'nvim-treesitter.configs'.setup {
     "json",
     "html",
     "nix",
-    "yaml"
+    "yaml",
+    "python",
+    "elixir"
   },
 
   autotag = {
