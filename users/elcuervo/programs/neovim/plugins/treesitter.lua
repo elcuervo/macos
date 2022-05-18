@@ -26,7 +26,8 @@ require'nvim-treesitter.configs'.setup {
     "nix",
     "yaml",
     "python",
-    "elixir"
+    "elixir",
+    "hcl"
   },
 
   autotag = {
