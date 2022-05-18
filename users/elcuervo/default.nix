@@ -62,6 +62,7 @@ in
         # extra language servers
         solargraph
         rnix-lsp
+        rust-analyzer
         terraform-lsp
         terraform-ls
         nodePackages.typescript
