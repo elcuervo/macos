@@ -35,6 +35,7 @@ in
           "alfred"
           "dropshare"
           "loom"
+          "loopback"
 
           "grandperspective"
           "notion"
