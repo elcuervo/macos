@@ -68,6 +68,7 @@ in
         nodePackages.typescript
         nodePackages.typescript-language-server
         gopls
+        gotools
 
         # debugging
         delve # golang
