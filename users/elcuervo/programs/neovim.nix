@@ -32,6 +32,7 @@ in
       ${lib.strings.fileContents ./neovim/plugins/lspconfig.lua}
       ${lib.strings.fileContents ./neovim/plugins/treesitter.lua}
       ${lib.strings.fileContents ./neovim/plugins/lualine.lua}
+      ${lib.strings.fileContents ./neovim/plugins/trouble.lua}
       EOF
     ''
   ];
@@ -44,6 +45,7 @@ in
     onedark-nvim
     lualine-nvim
     nvim-web-devicons
+    trouble-nvim
 
     vim-fugitive
     webapi-vim
