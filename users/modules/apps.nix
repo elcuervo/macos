@@ -27,8 +27,6 @@ in
 
       homebrew = {
         casks = [
-          "blender"
-
           "bartender"
           "karabiner-elements"
           "rectangle"
