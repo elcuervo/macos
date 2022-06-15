@@ -43,6 +43,11 @@
           binaryCachePublicKeys = [
             "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
           ];
+
+          gc = {
+            automatic = true;
+            options = "--delete-older-than 2w";
+          };
         };
 
         nixpkgs = {
