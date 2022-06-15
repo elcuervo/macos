@@ -45,6 +45,7 @@ in
 
           "charles"
           "gqrx"
+          "protonvpn"
 
           "fliqlo"
 
