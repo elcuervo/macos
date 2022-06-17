@@ -51,6 +51,7 @@ in
     webapi-vim
     vim-gist
     vim-tmux-navigator
+    vim-carbon-now-sh
 
     # LSP
     nvim-lspconfig
