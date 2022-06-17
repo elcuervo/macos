@@ -36,6 +36,7 @@ in
           "loopback"
 
           "grandperspective"
+          "gpg-suite"
           "notion"
           "spotify"
           "google-chrome"
