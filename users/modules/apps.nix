@@ -34,10 +34,12 @@ in
           "dropshare"
           "loom"
           "loopback"
+          "handbrake"
 
           "grandperspective"
           "gpg-suite"
           "notion"
+          "obsidian"
           "spotify"
           "google-chrome"
           "balenaetcher"
