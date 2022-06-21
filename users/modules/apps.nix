@@ -38,7 +38,6 @@ in
 
           "grandperspective"
           "gpg-suite"
-          "notion"
           "obsidian"
           "spotify"
           "google-chrome"
