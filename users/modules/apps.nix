@@ -44,6 +44,7 @@ in
           "balenaetcher"
           "iterm2"
           "vlc"
+          "tailscale"
 
           "charles"
           "gqrx"
