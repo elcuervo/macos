@@ -35,6 +35,7 @@ in
           "Lightroom" = 1451544217;
           "Twitter" = 1482454543;
           "DaVinci Resolve" = 571213070;
+          "Tailscale" = 1475387142;
         };
       };
 
