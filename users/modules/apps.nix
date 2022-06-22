@@ -30,7 +30,7 @@ in
           "bartender"
           "karabiner-elements"
           "rectangle"
-          "alfred"
+          "raycast"
           "dropshare"
           "loom"
           "loopback"
