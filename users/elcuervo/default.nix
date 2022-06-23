@@ -51,13 +51,14 @@ in
       ];
 
       packages = with pkgs; [
+        git
         # QoL
         nixpkgs-fmt
         shellcheck
         hyperfine
 
         tree-sitter
-        nodejs # github copilot
+        nodejs
 
         # extra language servers
         solargraph
@@ -80,12 +81,8 @@ in
 
     programs = {
       home-manager.enable = true;
-
       bat.enable = true;
-
-      exa = {
-        enable = true;
-      };
+      exa.enable = true;
 
       gh = {
         enable = true;

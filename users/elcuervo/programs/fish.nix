@@ -28,6 +28,7 @@
   shellInit = lib.strings.fileContents ./fish/init.fish;
 
   shellAliases = {
+    git = "${pkgs.git}/bin/git";
     g = "${pkgs.git}/bin/git";
     gs = "${pkgs.git}/bin/git status";
     gp = "${pkgs.git}/bin/git pull --rebase";

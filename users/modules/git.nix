@@ -58,6 +58,9 @@ in
             ];
 
             extraConfig = {
+              commit.gpgsign = true;
+              user.signingkey = "3A54A34CDE205745";
+
               core = {
                 quotepath = false;
               };
