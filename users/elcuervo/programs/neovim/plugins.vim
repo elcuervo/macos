@@ -1,1 +1,1 @@
-autocmd BufWritePre *.tf lua vim.lsp.buf.formatting_sync()
+autocmd BufWritePre *.tf,*.hcl lua vim.lsp.buf.formatting_sync()
