@@ -54,6 +54,7 @@ in
           "signal"
           "telegram"
           "slack"
+          "discord"
           "zoom"
         ];
       };
