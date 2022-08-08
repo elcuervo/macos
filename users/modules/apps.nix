@@ -45,7 +45,6 @@ in
           "balenaetcher"
           "iterm2"
           "vlc"
-          "elgato-camera-hub"
 
           "charles"
           "gqrx"
