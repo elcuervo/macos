@@ -22,7 +22,6 @@ in
     mkIf cfg.enable {
       homebrew = {
         brews = [
-          "gcc"
           "mas"
         ];
 
