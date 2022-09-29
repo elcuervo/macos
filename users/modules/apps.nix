@@ -38,6 +38,7 @@ in
           "handbrake"
 
           "grandperspective"
+          "timemachineeditor"
           "gpg-suite"
           "obsidian"
           "spotify"
