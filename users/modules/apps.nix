@@ -36,6 +36,7 @@ in
           "loom"
           "loopback"
           "handbrake"
+          "arduino-ide"
 
           "grandperspective"
           "timemachineeditor"
