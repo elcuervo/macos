@@ -27,6 +27,9 @@ in
       };
 
       homebrew = {
+        enable = true;
+        autoUpdate = true;
+
         casks = [
           "bartender"
           "karabiner-elements"
@@ -37,6 +40,7 @@ in
           "loopback"
           "handbrake"
           "arduino-ide"
+          "tor-browser"
 
           "grandperspective"
           "timemachineeditor"
@@ -50,6 +54,7 @@ in
 
           "charles"
           "gqrx"
+          "tableplus"
           "protonvpn"
 
           "fliqlo"
