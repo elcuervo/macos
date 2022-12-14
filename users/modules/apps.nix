@@ -27,9 +27,6 @@ in
       };
 
       homebrew = {
-        enable = true;
-        autoUpdate = true;
-
         casks = [
           "bartender"
           "karabiner-elements"

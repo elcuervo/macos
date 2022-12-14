@@ -23,7 +23,6 @@ in
       homebrew = {
         enable = true;
         autoUpdate = true;
-        cleanup = "zap";
       };
     };
 }
