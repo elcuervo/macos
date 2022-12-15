@@ -38,6 +38,7 @@ in
           "handbrake"
           "arduino-ide"
           "tor-browser"
+          "openemu"
 
           "grandperspective"
           "timemachineeditor"
