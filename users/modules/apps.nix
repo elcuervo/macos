@@ -29,6 +29,8 @@ in
       homebrew = {
         casks = [
           "bartender"
+          "cron"
+          "ledger-live"
           "karabiner-elements"
           "rectangle"
           "raycast"
@@ -39,6 +41,7 @@ in
           "arduino-ide"
           "tor-browser"
           "openemu"
+          "amazon-photos"
 
           "grandperspective"
           "timemachineeditor"
