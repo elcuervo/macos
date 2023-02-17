@@ -27,6 +27,8 @@ in
       };
 
       homebrew = {
+        taps = [ "homebrew/core" "homebrew/cask" "homebrew/cask-versions" ];
+
         casks = [
           "bartender"
           "cron"
@@ -40,7 +42,7 @@ in
           "handbrake"
           "arduino-ide"
           "tor-browser"
-          "openemu"
+          "openemu-experimental"
           "amazon-photos"
 
           "grandperspective"
