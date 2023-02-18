@@ -36,13 +36,15 @@
             experimental-features = nix-command flakes
           '';
 
-          binaryCaches = [
-            "https://cache.nixos.org"
-          ];
+          settings = {
+            substituters = [
+              "https://cache.nixos.org"
+            ];
 
-          binaryCachePublicKeys = [
-            "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
-          ];
+            trust-public-keys = [
+              "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
+            ];
+          };
 
           gc = {
             automatic = true;
