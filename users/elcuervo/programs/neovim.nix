@@ -17,12 +17,25 @@ in
   vimAlias = true;
   vimdiffAlias = true;
 
+  extraConfig = ''
+    syntax on
+  '';
+
+  extraPackages = with pkgs; [
+    yaml-language-server
+  ];
+
   plugins = with pkgs.vimPlugins; [
     supertab
     sensible
+    nerdtree
 
     # UI
-    onedark-nvim
+    {
+      plugin = onedark-nvim;
+      config = "colorscheme onedark";
+    }
+
     lualine-nvim
     nvim-web-devicons
     trouble-nvim
