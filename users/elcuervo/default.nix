@@ -46,6 +46,8 @@ in
     home = {
       homeDirectory = "/Users/${username}";
 
+      stateVersion = "22.11";
+
       sessionPath = [
         "$HOME/.local/bin"
       ];

@@ -9,8 +9,4 @@
     hostName = "corax";
     computerName = "corax";
   };
-
-  system = {
-    stateVersion = 4;
-  };
 }
