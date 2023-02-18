@@ -17,26 +17,6 @@ in
   vimAlias = true;
   vimdiffAlias = true;
 
-  extraConfig = builtins.concatStringsSep "\n" [
-    (lib.strings.fileContents ./neovim/config.vim)
-    (lib.strings.fileContents ./neovim/plugins.vim)
-
-    (lib.strings.fileContents ./neovim/plugins/lspsaga.vim)
-    (lib.strings.fileContents ./neovim/plugins/cmp.vim)
-    (lib.strings.fileContents ./neovim/plugins/telescope.vim)
-
-    ''
-      lua << EOF
-      ${lib.strings.fileContents ./neovim/config.lua}
-
-      ${lib.strings.fileContents ./neovim/plugins/lspconfig.lua}
-      ${lib.strings.fileContents ./neovim/plugins/treesitter.lua}
-      ${lib.strings.fileContents ./neovim/plugins/lualine.lua}
-      ${lib.strings.fileContents ./neovim/plugins/trouble.lua}
-      EOF
-    ''
-  ];
-
   plugins = with pkgs.vimPlugins; [
     supertab
     sensible
@@ -46,28 +26,5 @@ in
     lualine-nvim
     nvim-web-devicons
     trouble-nvim
-
-    vim-fugitive
-    webapi-vim
-    vim-gist
-    vim-tmux-navigator
-    vim-carbon-now-sh
-
-    # LSP
-    nvim-lspconfig
-    nvim-cmp
-    cmp-nvim-lsp
-    lspsaga-nvim
-    luasnip
-    lspkind-nvim
-
-    # Navigation
-    plenary-nvim
-    telescope-nvim
-
-    # Highlight
-    nvim-treesitter
-    nvim-treesitter-context
-    nvim-treesitter-endwise
   ];
 }
