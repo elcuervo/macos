@@ -22,7 +22,11 @@ in
     mkIf cfg.enable {
       homebrew = {
         enable = true;
-        autoUpdate = true;
+
+        onActivation = {
+          autoUpdate = true;
+          upgrade = true;
+        };
       };
     };
 }
