@@ -20,6 +20,14 @@ in
   withPython3 = false;
   withRuby = false;
 
+  extraConfig = builtins.concatStringsSep "\n" [
+    (lib.strings.fileContents ./neovim/config.vim)
+  ];
+
+  extraLuaConfig = builtins.concatStringsSep "\n" [
+    (lib.strings.fileContents ./neovim/config.lua)
+  ];
+
   extraPackages = with pkgs; [
     yaml-language-server
     dhall-lsp-server
