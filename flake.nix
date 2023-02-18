@@ -2,9 +2,11 @@
   description = "MacOS configurations";
 
   inputs = {
-    nixpkgs = {
-      url = "github:nixos/nixpkgs/nixpkgs-unstable";
-    };
+    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+
+    flake-utils.url = "github:numtide/flake-utils";
+
+    nix-colors.url = "github:misterio77/nix-colors";
 
     nur = {
       url = "github:nix-community/NUR";
@@ -12,14 +14,17 @@
 
     darwin = {
       url = "github:lnl7/nix-darwin/master";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     agenix = {
       url = "github:ryantm/agenix";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     homemanager = {
-      url = "github:nix-community/home-manager";
+      url = "github:nix-community/home-manager/master";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 

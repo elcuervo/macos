@@ -16,6 +16,11 @@ in
   enable = true;
   vimAlias = true;
   vimdiffAlias = true;
+  package = pkgs.neovim-unwrapped;
+
+  withNodeJs = false;
+  withPython3 = false;
+  withRuby = false;
 
   extraConfig = ''
     syntax on
