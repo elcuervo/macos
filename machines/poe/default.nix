@@ -9,8 +9,4 @@
     hostName = "poe";
     computerName = "poe";
   };
-
-  system = {
-    stateVersion = 4;
-  };
 }
