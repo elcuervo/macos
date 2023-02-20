@@ -6,7 +6,7 @@ let
     src = pkgs.fetchFromGitHub {
       owner = "RRethy";
       repo = "nvim-treesitter-endwise";
-      rev = "f653101e056cebcee71b47b8adb93d3a878cda36";
+      rev = "0cf4601c330cf724769a2394df555a57d5fd3f34";
       sha256 = "sha256-J1cKq/Ctw8Vj7RL3D9AnSezS+8Ugm+nfgXz7KjfKtVo=";
     };
   };
@@ -26,6 +26,7 @@ in
 
   extraLuaConfig = builtins.concatStringsSep "\n" [
     (lib.strings.fileContents ./neovim/config.lua)
+    #    (lib.strings.fileContents ./neovim/plugins/treesitter.lua)
   ];
 
   extraPackages = with pkgs; [
