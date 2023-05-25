@@ -41,6 +41,7 @@ in
           "arduino-ide"
           "tor-browser"
           "amazon-photos"
+          "beeper"
 
           "grandperspective"
           "timemachineeditor"
