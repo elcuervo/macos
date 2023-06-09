@@ -40,6 +40,7 @@ in
           "handbrake"
           "arduino-ide"
           "tor-browser"
+          "postman"
           "amazon-photos"
           "beeper"
 
