@@ -40,7 +40,10 @@ in
           "handbrake"
           "arduino-ide"
           "tor-browser"
+          "postman"
           "amazon-photos"
+          "beeper"
+          "brave-browser"
 
           "grandperspective"
           "timemachineeditor"

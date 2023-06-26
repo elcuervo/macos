@@ -50,7 +50,7 @@ in
                 end)
 
                 hs.hotkey.bind("cmd", '4', function()
-                  hs.application.launchOrFocus("Telegram")
+                  hs.application.launchOrFocus("Beeper")
                 end)
               '';
             };
