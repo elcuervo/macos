@@ -43,6 +43,7 @@ in
           "postman"
           "amazon-photos"
           "beeper"
+          "brave-browser"
 
           "grandperspective"
           "timemachineeditor"
