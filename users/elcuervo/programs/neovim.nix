@@ -7,7 +7,7 @@ let
       owner = "RRethy";
       repo = "nvim-treesitter-endwise";
       rev = "0cf4601c330cf724769a2394df555a57d5fd3f34";
-      sha256 = "sha256-J1cKq/Ctw8Vj7RL3D9AnSezS+8Ugm+nfgXz7KjfKtVo=";
+      sha256 = "sha256-Pns+3gLlwhrojKQWN+zOFxOmgRkG3vTPGoLX90Sg+oo=";
     };
   };
 in
@@ -22,11 +22,16 @@ in
 
   extraConfig = builtins.concatStringsSep "\n" [
     (lib.strings.fileContents ./neovim/config.vim)
+    (lib.strings.fileContents ./neovim/plugins.vim)
+
+    (lib.strings.fileContents ./neovim/plugins/telescope.vim)
   ];
 
   extraLuaConfig = builtins.concatStringsSep "\n" [
     (lib.strings.fileContents ./neovim/config.lua)
-    #    (lib.strings.fileContents ./neovim/plugins/treesitter.lua)
+
+    (lib.strings.fileContents ./neovim/plugins/treesitter.lua)
+    (lib.strings.fileContents ./neovim/plugins/lualine.lua)
   ];
 
   extraPackages = with pkgs; [
