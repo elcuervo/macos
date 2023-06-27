@@ -21,7 +21,6 @@ in
     mkIf cfg.enable {
       environment = {
         systemPackages = with pkgs; [
-          ngrok
           hackrf
         ];
       };

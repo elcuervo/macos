@@ -25,7 +25,6 @@ in
           gnumake
           htop
           jq
-          ngrok
           nmap
           s3cmd
           tmux
